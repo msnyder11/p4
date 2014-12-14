@@ -7,9 +7,9 @@ return array(
         'mysql' => array(
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'database'  => 'database-name-goes-here',
+            'database'  => 'p4',
             'username'  => 'root',
-            'password'  => 'mysql-password-goes-here',
+            'password'  => '10edg0ASFx',
         ),
 
     ),
