@@ -16,6 +16,7 @@
 	<body>
 
 		@if(Auth::check())
+			<a> Signed in as </a>
 		    <a href='/logout'>Log out {{ Auth::user()->email; }}</a>
 		@else 
 		    <a href='/usersignup'>Sign up</a> or <a href='/userlogin'>Log in</a>

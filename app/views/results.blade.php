@@ -9,10 +9,11 @@
 @stop
 
 @section('content')
-	@if(Auth::check())
+	<br>
+	@foreach($leaderboard as $num)
+		{{ $num->user()->username }}
+		{{ $num->score }}
 		<br>
-
-		<object width="800" height="400" data="p4.swf" align="middle"></object>
-	@endif
+	@endforeach
 	
 @stop
