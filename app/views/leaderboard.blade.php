@@ -14,13 +14,9 @@
 
 
 	<a href='/'> Home       </a>
-	<a href='/leaderboard'> Leaderboard</a>
 	<a href='/yourscores'> Your Scores</a>
 
-	<br>
-	<br>
-	<a> Your score is: </a>
-	{{ $score->score }}
+	
 	<br>
 	<br>
 

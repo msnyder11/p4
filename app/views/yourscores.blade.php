@@ -15,12 +15,8 @@
 
 	<a href='/'> Home       </a>
 	<a href='/leaderboard'> Leaderboard</a>
-	<a href='/yourscores'> Your Scores</a>
 
-	<br>
-	<br>
-	<a> Your score is: </a>
-	{{ $score->score }}
+	
 	<br>
 	<br>
 
@@ -33,11 +29,12 @@
 		@foreach($leaderboard as $num)
 		
 			@foreach($num->user as $user)
+				@if($user->id == Auth::user()->id)
 				<tr>
 					<td>{{ $user->username }}</td>
 					<td>{{ $num->score }}<td>
 				</tr>
-
+				@endif
 			@endforeach
 			
 		

@@ -30,9 +30,10 @@ class CreateTables extends Migration {
 			$table->integer('score');
 		});
 
-		Schema::create('user_score', function($table)
+		Schema::create('score_user', function($table)
 		{
-			$table->increments('user_id')->unsigned();
+			$table->increments('id');
+			$table->integer('user_id')->unsigned();
 			$table->integer('score_id')->unsigned();
 
 			$table->foreign('user_id')->references('id')->on('users');
@@ -52,7 +53,7 @@ class CreateTables extends Migration {
 		//
 		Schema::drop('users');
 		Schema::drop('scores');
-		Schema::drop('user_score');
+		Schema::drop('score_user');
 	}
 
 }
