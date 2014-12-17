@@ -21,6 +21,7 @@ class CreateTables extends Migration {
 		    $table->string('remember_token',100); 
 		    $table->string('password');
 		    $table->timestamps();
+		    $table->integer('played');
 
 		});
 

@@ -30,6 +30,8 @@ class ResultsController extends BaseController
 		$score_id = $score->id;
 		$user_id = Auth::user()->id;
 		$user = User::find($user_id);
+		$user->played = $user->played + 1;
+		$user->save();
 
 		$userscore = $user->scores()->where('score', '=', $score->score);
 		if($userscore->count() == 0)

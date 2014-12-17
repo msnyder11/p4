@@ -14,7 +14,7 @@
 
 
 	<a href='/'> Home       </a>
-	<a href='/yourscores'> Your Scores</a>
+	<a style="padding-left:20px"  href='/yourscores'> Your Scores</a>
 
 	
 	<br>

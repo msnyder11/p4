@@ -14,13 +14,16 @@
 
 
 	<a href='/'> Home       </a>
-	<a href='/leaderboard'> Leaderboard</a>
+	<a style="padding-left:20px"  href='/leaderboard'> Leaderboard</a>
+
+	<br>
+	<a href='/erase'> Erase Your Scores</a>
 
 	
 	<br>
 	<br>
 
-	<a> Leaderboard </a>
+	<a> Your Scores </a>
 	<table align="center">
 		<tr>
 				<th> Username</th>

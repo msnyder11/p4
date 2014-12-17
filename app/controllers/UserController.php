@@ -17,6 +17,7 @@ class UserController extends BaseController
 			$user = new User;
             $user->username = Input::get('username');
             $user->password = Hash::make(Input::get('password'));
+            $user->played = 0;
 
             # Try to add the user 
             try {

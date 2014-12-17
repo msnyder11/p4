@@ -22,4 +22,20 @@ class LeaderboardController extends BaseController
 		return View::make('yourscores')
 		->with('leaderboard', $leaderboard);
 	}
+
+	public function getErase()
+	{
+		$leaderboard = Score::All();
+		foreach($leaderboard as $score)
+		{
+			foreach($score->user as $user)
+			{
+				if($user->id == Auth::user()->id)
+				{
+					$score->user()->detach($user->id);
+				}
+			}
+		}
+		return Redirect::to('/leaderboard');
+	}
 }

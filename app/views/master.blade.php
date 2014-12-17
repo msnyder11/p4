@@ -18,6 +18,9 @@
 		@if(Auth::check())
 			<a> Logged in as {{ Auth::user()->username; }}</a>
 		    <a href='/logout'>Log out </a>
+
+		    <br>
+		    <a> Number of times played: {{ Auth::user()->played; }}</a>
 		@else 
 		    <a href='/usersignup'>Sign up</a> or <a href='/userlogin'>Log in</a>
 		@endif

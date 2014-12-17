@@ -31,6 +31,7 @@ Route::post('/results', 'ResultsController@postResults');
 
 Route::get('/leaderboard', 'LeaderboardController@getLeaderboard');
 Route::get('/yourscores', 'LeaderboardController@getYourscores');
+Route::get('/erase', 'LeaderboardController@getErase');
 
 Route::get('/usersignup',
     array(
