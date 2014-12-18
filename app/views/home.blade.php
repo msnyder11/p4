@@ -17,7 +17,7 @@
 		
 		<br>
 
-		<object width="800" height="400" data="p4.swf" align="middle"></object>
+		<object width="800" height="400" data="p4.swf" align="middle" border="2px #0099CC"></object>
 	@endif
 	
 @stop

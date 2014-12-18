@@ -2,18 +2,23 @@
 <html>
 	<head>
 
-		<title>@yield('title', 'P3')</title>
+		<title>@yield('title', 'P4')</title>
 		<style>
 
 			h1{text-align:center;background-color:#0099CC; font-family: Arial, Verdana, Sans-serif; }
 			h2{text-align:center; font-size:80%; background-color:#0099CC;font-family: Arial, Verdana, Sans-serif;}
-			body{text-align:center;font-family: Arial, Verdana, Sans-serif; background-size:cover;}
+			body{text-align:center;font-family: Arial, Verdana, Sans-serif; background-size:cover;background-image:url("background.png");}
 		</style>
+
+
+		<h1> Pillow Dodge Game </h1>
+
+
 		@yield('head')
 
 	</head>
 
-	<body background="background.png">
+	<body>
 
 		@if(Auth::check())
 			<a> Logged in as {{ Auth::user()->username; }}</a>
